@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eventos industriais: palestras, webinars e treinamentos</title>
+<meta name="description" content="Agenda e fontes de palestras, webinars e eventos de formação técnica para a indústria brasileira.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eventos industriais">
+<meta property="og:description" content="Agenda e fontes de palestras, webinars e treinamentos de formação técnica para a indústria brasileira.">
+<meta property="og:image" content="https://projetoindustrial.github.io/eventos-industriais/og.png">
+<meta property="og:url" content="https://projetoindustrial.github.io/eventos-industriais/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📅%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Sans+Condensed:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f4;--sf:#fff;--tx:#0f2330;--mu:#4d6070;--bd:#cdd6de;--ac:#0a5c8a;--ok:#0b6b3f;--in:#1f5fbf;--wa:#8a5a00;--no:#b4232c;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1a22;--sf:#15252f;--tx:#e6edf3;--mu:#9db0bf;--bd:#27404f;--ac:#6cb8e6;--ok:#5fd39a;--in:#8db6ff;--wa:#e5b454;--no:#ff8a8f}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 "IBM Plex Sans",system-ui,sans-serif}
+.w{max-width:760px;margin:0 auto;padding:16px}
+h1{font:600 1.7rem/1.15 "IBM Plex Sans Condensed","IBM Plex Sans",sans-serif;margin:8px 0 4px}
+.lead{color:var(--mu);margin:0 0 14px;max-width:60ch}
+nav{display:flex;gap:4px;border-bottom:1px solid var(--bd);margin-bottom:12px}
+nav a{padding:10px 14px;color:var(--mu);text-decoration:none;border-bottom:3px solid transparent}
+nav a.on{color:var(--tx);border-color:var(--ac);font-weight:600}
+a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+#bar{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+#bar input{grid-column:1/-1}
+select,input{font:inherit;color:var(--tx);background:var(--sf);border:1px solid var(--bd);border-radius:6px;padding:9px 10px;min-width:0}
+.card{display:flex;gap:14px;background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:12px 14px;margin-bottom:10px}
+.dt{flex:none;width:64px;text-align:center;font:600 .8rem/1.2 "IBM Plex Sans Condensed",sans-serif;color:var(--mu);border-right:1px solid var(--bd);padding-right:12px}
+.dt b{display:block;font-size:2rem;line-height:1;color:var(--ac)}
+.cd{min-width:0}
+.cd h3{margin:0 0 2px;font-size:1.02rem;line-height:1.3}
+.cd p{margin:0 0 6px;color:var(--mu);font-size:.92rem}
+.b{display:inline-block;font-size:.8rem;border:1px solid currentColor;border-radius:4px;padding:1px 7px;margin:0 6px 6px 0}
+.gratuito{color:var(--ok)}.inscricao{color:var(--in)}.seletivo,.pago{color:var(--wa)}.restrito{color:var(--no)}.verificar,.m{color:var(--mu)}
+.cd a.l{color:var(--ac);font-weight:600}
+.vz{padding:28px 12px;text-align:center;color:var(--mu)}
+.vz a{color:var(--ac)}
+footer{color:var(--mu);font-size:.85rem;margin-top:20px}
+section p{max-width:62ch}
+</style>
+</head>
+<body>
+<div class="w">
+<h1>Eventos industriais</h1>
+<p class="lead">Palestras, webinars e treinamentos para quem trabalha ou estuda para a indústria. Cada item mostra se o acesso é gratuito.</p>
+<nav aria-label="Seções"><a href="#agenda">Agenda</a><a href="#fontes">Fontes</a><a href="#sobre">Sobre</a></nav>
+<div id="bar">
+<select id="per" aria-label="Período"><option value="">Todo o período</option><option value="hoje">Hoje</option><option value="7">Próximos 7 dias</option><option value="30">Próximos 30 dias</option></select>
+<select id="modo" aria-label="Formato"><option value="">Qualquer formato</option></select>
+<select id="aces" aria-label="Acesso"><option value="">Qualquer acesso</option></select>
+<select id="vert" aria-label="Vertical"><option value="">Todas as verticais</option></select>
+<input id="q" type="search" placeholder="Buscar por instituição ou tema" aria-label="Buscar">
+</div>
+<main id="main"></main>
+<section id="sobre" hidden>
+<p>Esta agenda reúne eventos de formação técnica industrial e as instituições que os promovem. Entram eventos online, presenciais e híbridos, cada um com um selo de acesso.</p>
+<p><span class="b gratuito">Gratuito</span> aberto ao público. <span class="b inscricao">Inscrição</span> pede cadastro ou tem custo a confirmar. <span class="b seletivo">Seletivo</span> depende de edital ou seleção. <span class="b restrito">Restrito</span> é para clientes, associados ou empresas. <span class="b verificar">A verificar</span> ainda não confirmado.</p>
+<p>Confirme data, horário e vagas na página oficial antes de se inscrever. Os selos refletem a última verificação do catálogo. Nomes e links pertencem às instituições citadas.</p>
+</section>
+<footer>Dados do catálogo unificado de fontes de formação técnica industrial.</footer>
+</div>
+<script>
+const $=s=>document.querySelector(s),TZ='America/Sao_Paulo';
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const SELO={gratuito:'Gratuito',inscricao:'Inscrição',seletivo:'Seletivo',restrito:'Restrito',pago:'Pago',verificar:'A verificar'};
+const MODO={online:'Online',presencial:'Presencial',hibrido:'Híbrido'};
+let EV=[],FO=[];
+const dia=d=>d.toLocaleDateString('sv-SE',{timeZone:TZ});
+const url=u=>/^https?:\/\//.test(u||'')?u:'';
+const sel=(k,t)=>`<span class="b ${k}">${esc(t)}</span>`;
+function fill(id,vals,lab){const s=$(id);[...new Set(vals.filter(Boolean))].sort().forEach(v=>s.insertAdjacentHTML('beforeend',`<option value="${esc(v)}">${esc(lab?lab(v):v)}</option>`))}
+function passa(x){const m=$('#modo').value,a=$('#aces').value,v=$('#vert').value,q=$('#q').value.toLowerCase();
+return(!m||x.modo===m)&&(!a||x.selo===a)&&(!v||x.vertical===v)&&(!q||(x.titulo+' '+x.org).toLowerCase().includes(q))}
+function link(u,t){u=url(u);return u?`<a class="l" href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`:''}
+function agenda(){
+const now=new Date(),fo=Object.fromEntries(FO.map(f=>[f.id,f]));
+let l=EV.map(e=>{const f=fo[e.fonte_id]||{};return{...e,d:new Date(e.inicio),f:new Date(e.fim||e.inicio),titulo:e.titulo,org:f.instituicao||e.org||'',vertical:e.vertical||f.vertical}}).filter(e=>!isNaN(e.d)&&e.f>=now);
+const p=$('#per').value;
+if(p==='hoje')l=l.filter(e=>dia(e.d)<=dia(now));else if(p)l=l.filter(e=>e.d<=new Date(now.getTime()+p*864e5));
+l=l.filter(passa).sort((a,b)=>a.d-b.d);
+if(!l.length){$('#main').innerHTML=`<div class="vz">${EV.length?'Nenhum evento com esses filtros. Tente ampliar o período.':'Ainda não há eventos com data cadastrados. Veja as <a href="#fontes">fontes de programação</a>: cada uma publica seus próximos eventos.'}</div>`;return}
+$('#main').innerHTML=l.map(e=>`<article class="card"><div class="dt"><b>${esc(e.d.toLocaleDateString('pt-BR',{timeZone:TZ,day:'2-digit'}))}</b>${esc(e.d.toLocaleDateString('pt-BR',{timeZone:TZ,month:'short'}))}<br>${esc(e.d.toLocaleTimeString('pt-BR',{timeZone:TZ,hour:'2-digit',minute:'2-digit'}))}</div><div class="cd"><h3>${esc(e.titulo)}</h3><p>${esc(e.org)}${e.cidade?'<br>'+esc(e.cidade):''}</p>${sel(e.selo||'verificar',SELO[e.selo]||'A verificar')}${sel('m',MODO[e.modo]||'Online')}<br>${link(e.link,'Página do evento')}</div></article>`).join('')}
+function fontes(){
+const l=FO.map(f=>({...f,titulo:f.instituicao,org:f.tema})).filter(passa);
+$('#main').innerHTML=l.length?`<p class="m">${l.length} fontes de programação</p>`+l.map(f=>`<article class="card"><div class="cd"><h3>${esc(f.titulo)}</h3><p>${esc(f.org)}</p>${sel(f.selo,SELO[f.selo])}${sel('m',MODO[f.modo])}${f.certificado==='Sim'?sel('m','Certificado'):''}<br>${link(f.url,'Página de programação')}</div></article>`).join(''):'<div class="vz">Nenhuma fonte com esses filtros.</div>'}
+function rota(){
+const r=(location.hash||'#agenda').slice(1);
+document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+r));
+$('#per').hidden=r!=='agenda';$('#bar').hidden=r==='sobre';$('#main').hidden=r==='sobre';$('#sobre').hidden=r!=='sobre';
+if(r==='agenda')agenda();else if(r==='fontes')fontes()}
+Promise.all([fetch('eventos.json').then(r=>r.json()),fetch('fontes.json').then(r=>r.json())]).then(([e,f])=>{
+EV=e;FO=f;
+fill('#modo',FO.map(x=>x.modo),v=>MODO[v]||v);fill('#aces',FO.map(x=>x.selo),v=>SELO[v]||v);fill('#vert',FO.map(x=>x.vertical));
+['per','modo','aces','vert','q'].forEach(i=>$('#'+i).addEventListener('input',rota));
+addEventListener('hashchange',rota);rota()
+}).catch(()=>{$('#main').innerHTML='<div class="vz">Não foi possível carregar os dados. Recarregue a página.</div>'});
+</script>
+</body>
+</html>
