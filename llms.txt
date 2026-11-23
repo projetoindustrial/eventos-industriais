@@ -1,0 +1,12 @@
+# Eventos industriais: palestras, webinars e treinamentos
+
+> Agenda e fontes de palestras, webinars e eventos de formação técnica para a indústria brasileira.
+
+## Páginas
+- [Eventos industriais: palestras, webinars e treinamentos](https://projetoindustrial.github.io/eventos-industriais/): página principal
+- [Eventos (JSON)](https://projetoindustrial.github.io/eventos-industriais/eventos.json): dados dos eventos
+- [Fontes (JSON)](https://projetoindustrial.github.io/eventos-industriais/fontes.json): fontes consultadas
+
+## Projeto Industrial
+- [Portal](https://projetoindustrial.github.io/): início do ecossistema
+- [Sitemap](https://projetoindustrial.github.io/eventos-industriais/sitemap.xml)
