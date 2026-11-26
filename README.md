@@ -28,3 +28,7 @@ Site: https://projetoindustrial.github.io/eventos-industriais/
 `modo`: online, presencial ou hibrido. `selo`: gratuito, inscricao, seletivo, restrito, pago ou verificar. Eventos passados somem da Agenda sozinhos.
 
 Nomes e links pertencem às instituições citadas. Confirme data, horário e vagas na página oficial.
+
+## Licença
+
+O código deste repositório está sob a licença [MIT](LICENSE). Dados, nomes, textos e marcas de terceiros citados ou reunidos aqui continuam sob as licenças e os direitos de cada fonte e não são cobertos por esta licença.
