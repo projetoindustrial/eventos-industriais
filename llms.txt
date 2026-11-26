@@ -2,6 +2,8 @@
 
 > Agenda e fontes de palestras, webinars e eventos de formação técnica para a indústria brasileira.
 
+A agenda com datas (`eventos.json`) é preenchida por rodadas de coleta e pode estar vazia; `fontes.json` traz 106 fontes de programação (96 online, 10 presenciais) com selo de acesso (gratuito, inscrição, seletivo, restrito ou a verificar). Confirme data, horário e vagas na página oficial.
+
 ## Páginas
 - [Eventos industriais: palestras, webinars e treinamentos](https://projetoindustrial.github.io/eventos-industriais/): página principal
 - [Eventos (JSON)](https://projetoindustrial.github.io/eventos-industriais/eventos.json): dados dos eventos
