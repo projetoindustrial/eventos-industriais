@@ -1,1 +1,47 @@
-[]
+[
+ {
+  "id": "evt-0001",
+  "fonte_id": "IE-005",
+  "titulo": "Seminário de Gás Natural (IBP)",
+  "inicio": "2027-05-12T00:00:00-03:00",
+  "fim": "2027-05-13T23:59:00-03:00",
+  "modo": "presencial",
+  "link": "https://www.ibp.org.br/en/events/agenda/",
+  "selo": "verificar",
+  "verificado_em": "2026-11-27"
+ },
+ {
+  "id": "evt-0002",
+  "fonte_id": "IE-005",
+  "titulo": "Rio Pipeline & Logistics (IBP)",
+  "inicio": "2027-09-14T00:00:00-03:00",
+  "fim": "2027-09-16T23:59:00-03:00",
+  "modo": "presencial",
+  "link": "https://www.ibp.org.br/en/events/agenda/",
+  "selo": "verificar",
+  "verificado_em": "2026-11-27"
+ },
+ {
+  "id": "evt-0003",
+  "fonte_id": "IE-005",
+  "titulo": "OTC Brasil (IBP)",
+  "inicio": "2027-10-26T00:00:00-03:00",
+  "fim": "2027-10-28T23:59:00-03:00",
+  "modo": "presencial",
+  "link": "https://www.ibp.org.br/en/events/agenda/",
+  "selo": "verificar",
+  "verificado_em": "2026-11-27"
+ },
+ {
+  "id": "evt-0004",
+  "fonte_id": "NOVO-002",
+  "titulo": "Febrava 2027 (feira de refrigeração, ar-condicionado, ventilação e aquecimento)",
+  "inicio": "2027-09-14T00:00:00-03:00",
+  "fim": "2027-09-17T23:59:00-03:00",
+  "modo": "presencial",
+  "cidade": "São Paulo/SP",
+  "link": "https://www.febrava.com.br/en/",
+  "selo": "verificar",
+  "verificado_em": "2026-11-27"
+ }
+]
